@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.js"
+        integrity="sha256-2Kok7MbOyxpgUVvAk/HJ2jigOSYS2auK4Pfzbm7uH60=" crossorigin="anonymous">
+        </script>
+    <script>
+        $(function () {
+            $("#header").load("header.html");
+            $("#footer").load("footer.html");
+        });
+    </script>
+
+
+    <div id="header"></div>
+</head>
+
+
+<body>
+    <div class="container" style="margin-top:30px; margin-bottom:30px">
+
+        <section>
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="../shared/images/key.jpg" class="w-100">
+                    </div>
+                    <div class="col-md-8 px-3">
+                        <div class="card-block px-3">
+                            <h4 class="card-title">Who we are?</h4>
+                            <p class="card-text">We offer you the ability to use the expertise and vast knowledge of our
+                                certified & professional team<span id="dots1">...</span><span id="more1">
+                                    <br><br>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue
+                                    eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.<br><br>Nunc
+                                    sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc
+                                    venenatis imperdiet sed ornare turpis.</span> </p>
+                            <button class="btn btn-info" onclick="collapseShow(1)" id="myBtn1">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="../shared/images/lock.jpg" class="w-100">
+                    </div>
+                    <div class="col-md-8 px-3">
+                        <div class="card-block px-3">
+                            <h4 class="card-title">Professional Services</h4>
+                            <p class="card-text">We specialize in supplying integration, consulting and training
+                                services to meet the always evolving<span id="dots2">...</span><span id="more2">
+                                    <br><br>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue
+                                    eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.<br><br>Nunc
+                                    sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc
+                                    venenatis imperdiet sed ornare turpis.</span> </p>
+                            <button class="btn btn-info" onclick="collapseShow(2)" id="myBtn2">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="card">
+                <div class="row">
+                    <div class="col-md-2">
+                        <img src="../shared/images/handshake.jpg" class="w-100">
+                    </div>
+                    <div class="col-md-8 px-3">
+                        <div class="card-block px-3">
+                            <h4 class="card-title">Business Partners</h4>
+                            <p class="card-text">We are a leading certified partner of IT Security and networking
+                                vendors and have been awarded<span id="dots3">...</span><span id="more3">
+                                    <br><br>erisque enim ligula venenatis dolor. Maecenas nisl est, ultrices nec congue
+                                    eget, auctor vitae massa. Fusce luctus vestibulum augue ut aliquet.<br><br>Nunc
+                                    sagittis dictum nisi, sed ullamcorper ipsum dignissim ac. In at libero sed nunc
+                                    venenatis imperdiet sed ornare turpis.</span> </p>
+                            <button class="btn btn-info" onclick="collapseShow(3)" id="myBtn3">Read more</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </div>
+    <div id="footer"></div>
+
+
+</body>
+
+
+<script>
+    function collapseShow(id) {
+        var dots = document.getElementById("dots" + id);
+        var moreText = document.getElementById("more" + id);
+        var btnText = document.getElementById("myBtn" + id);
+
+        if (dots.style.display === "none") {
+            dots.style.display = "inline";
+            btnText.innerHTML = "Read more";
+            moreText.style.display = "none";
+        } else {
+            dots.style.display = "none";
+            btnText.innerHTML = "Read less";
+            moreText.style.display = "inline";
+        }
+    }
+</script>
+
+</html>
