@@ -34,7 +34,7 @@ You can change the data-set as you see fit in the data.py file.
 The data is represented by a dictionary in python (https://docs.python.org/2/tutorial/datastructures.html#dictionaries). The dictionary is practically the same as a JSON (which we have went over during our JS lessons), and so you are expected to be able to change it.
 
 The data is represented by a collection name (e.g. "dogs") for the key. 
-The value of a collection is a list of dictionaries (you can think of them as JSONs), representing elements.
+The 	dictionaries (you can think of them as JSONs), representing elements.
 You can add collections and elements to a collection as you see fit.
 -------------
 

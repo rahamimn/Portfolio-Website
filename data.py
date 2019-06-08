@@ -1,75 +1,38 @@
-# The data for your website
-
-data = {
-    # Example of a collection
-    "dogs": [
+Zdata = {
+    "hardwareProducts": [
         {
-            "size": 'small',
-            "name": 'Welsh Corgi',
-            'snippet': "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
-                       "Duis sed ultricies lectus, et porttitor diam. Vivamus viverra tincidunt sagittis. "
-                       "Fusce pellentesque nibh a convallis eleifend. Ut malesuada, justo a sodales accumsan, "
-                       "magna purus vehicula lorem, a tincidunt justo odio vitae leo. Nulla a enim at metus ultrices "
-                       "mollis. Donec scelerisque, metus non volutpat finibus, ligula justo sollicitudin nisl, "
-                       "sit amet rutrum lorem felis eu orci. Sed dictum dignissim sapien, quis sodales dolor vehicula "
-                       "sit amet. Etiam tempus felis turpis, sit amet vehicula ante tincidunt at. Integer ligula mi, "
-                       "lobortis a hendrerit et, posuere id elit. Donec pellentesque nisl id vestibulum porttitor."
-                       "Phasellus vel felis rhoncus, vehicula nisl in, eleifend orci. Cras tellus nibh, semper nec mi "
-                       "eget, interdum vehicula ante. In sed ultrices erat, vitae dictum magna. Mauris id porttitor "
-                       "diam. Curabitur ut vehicula mi. Sed tempor felis nec est semper facilisis. Nunc a enim a "
-                       "lectus placerat feugiat. Maecenas ante risus, sollicitudin nec ligula eget, luctus mollis "
-                       "lorem."
-                       "Curabitur aliquam, leo id venenatis posuere, leo ex condimentum augue, quis iaculis "
-                       "elit nunc non sapien. Mauris id nunc aliquam, imperdiet diam ac, viverra ante. Praesent "
-                       "hendrerit neque et nisi tincidunt, mattis ultrices eros mollis. Etiam auctor facilisis felis, "
-                       "et commodo.",
-            'imageUrl': '/shared/images/corgi.jpg'
+            'name' : 'Cisco Meraki MR42 Cloud Managed ',
+			'type' : 'Wireless access point',
+			'description' : 'Data Link Protocol:IEEE 802.11ac Wave 2',
+			'price' :  '800.99'
+            'imageUrl' : '/shared/images/hardware/1.jpg'
         },
-        {
-            "size": 'small',
-            "name": 'Cavalier King Charles Spaniel',
-            'snippet': "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
-                       "Duis sed ultricies lectus, et porttitor diam. Vivamus viverra tincidunt sagittis. "
-                       "Fusce pellentesque nibh a convallis eleifend. Ut malesuada, justo a sodales accumsan, "
-                       "magna purus vehicula lorem, a tincidunt justo odio vitae leo. Nulla a enim at metus ultrices "
-                       "mollis. Donec scelerisque, metus non volutpat finibus, ligula justo sollicitudin nisl, "
-                       "sit amet rutrum lorem felis eu orci. Sed dictum dignissim sapien, quis sodales dolor vehicula "
-                       "sit amet. Etiam tempus felis turpis, sit amet vehicula ante tincidunt at. Integer ligula mi, "
-                       "lobortis a hendrerit et, posuere id elit. Donec pellentesque nisl id vestibulum porttitor."
-                       "Phasellus vel felis rhoncus, vehicula nisl in, eleifend orci. Cras tellus nibh, semper nec mi "
-                       "eget, interdum vehicula ante. In sed ultrices erat, vitae dictum magna. Mauris id porttitor "
-                       "diam. Curabitur ut vehicula mi. Sed tempor felis nec est semper facilisis. Nunc a enim a "
-                       "lectus placerat feugiat. Maecenas ante risus, sollicitudin nec ligula eget, luctus mollis "
-                       "lorem."
-                       "Curabitur aliquam, leo id venenatis posuere, leo ex condimentum augue, quis iaculis "
-                       "elit nunc non sapien. Mauris id nunc aliquam, imperdiet diam ac, viverra ante. Praesent "
-                       "hendrerit neque et nisi tincidunt, mattis ultrices eros mollis. Etiam auctor facilisis felis, "
-                       "et commodo.",
-            'imageUrl': '/shared/images/cavalier.jpg'
+		
+		{
+            'name' : 'Ubiquiti Unifi AP-AC Pro',
+			'type' : 'Wireless access point',
+			'description' : 'Data Link Protocol:IEEE 802.11g',
+			'price' :  '657.99'
+            'imageUrl' : '/shared/images/hardware/2.jpg'
         },
-        {
-            "size": 'medium',
-            "name": 'Australian Shepherd',
-            'snippet': "Lorem ipsum dolor sit amet, consectetur adipiscing elit. "
-                       "Duis sed ultricies lectus, et porttitor diam. Vivamus viverra tincidunt sagittis. "
-                       "Fusce pellentesque nibh a convallis eleifend. Ut malesuada, justo a sodales accumsan, "
-                       "magna purus vehicula lorem, a tincidunt justo odio vitae leo. Nulla a enim at metus ultrices "
-                       "mollis. Donec scelerisque, metus non volutpat finibus, ligula justo sollicitudin nisl, "
-                       "sit amet rutrum lorem felis eu orci. Sed dictum dignissim sapien, quis sodales dolor vehicula "
-                       "sit amet. Etiam tempus felis turpis, sit amet vehicula ante tincidunt at. Integer ligula mi, "
-                       "lobortis a hendrerit et, posuere id elit. Donec pellentesque nisl id vestibulum porttitor."
-                       "Phasellus vel felis rhoncus, vehicula nisl in, eleifend orci. Cras tellus nibh, semper nec mi "
-                       "eget, interdum vehicula ante. In sed ultrices erat, vitae dictum magna. Mauris id porttitor "
-                       "diam. Curabitur ut vehicula mi. Sed tempor felis nec est semper facilisis. Nunc a enim a "
-                       "lectus placerat feugiat. Maecenas ante risus, sollicitudin nec ligula eget, luctus mollis "
-                       "lorem."
-                       "Curabitur aliquam, leo id venenatis posuere, leo ex condimentum augue, quis iaculis "
-                       "elit nunc non sapien. Mauris id nunc aliquam, imperdiet diam ac, viverra ante. Praesent "
-                       "hendrerit neque et nisi tincidunt, mattis ultrices eros mollis. Etiam auctor facilisis felis, "
-                       "et commodo.",
-            'imageUrl': '/shared/images/aussi.jpg'
+		
+		{
+            'name' : 'Cradlepoint COR IBR600 ',
+			'type' : 'Wireless router',
+			'description' : 'Data Link Protocol:IEEE 802.11g',
+			'price' : '649.99'
+            'imageUrl' : '/shared/images/hardware/3.jpg'
+        },
+		
+		{
+            'name' : 'Microsoft Surface USB 3.0',
+			'type' : 'Ethernet Adapter',
+			'description' : 'Data Link Protocol:Gigabit Ethernet',
+			'price' : '34.99'
+            'imageUrl' : '/shared/images/hardware/4.jpg'
         },
     ],
+	
     "images": [
       {"url": '/shared/images/corgi.jpg'},
       {"url": '/shared/images/cavalier.jpg'},
@@ -78,15 +41,18 @@ data = {
       {"url": '/shared/images/cavalier.jpg'},
       {"url": '/shared/images/aussi.jpg'},
     ],
+	
     "sizes":[
       {"name": "small", "toString":"Small"},
       {"name": "medium", "toString":"Medium"},
       {"name": "big", "toString":"Big"},
     ],
+	
     "cities":[
       {"id":"telAviv", "toString": "Tel Aviv xoxo"},
       {"id":"2", "toString":"Haifa"}
     ],
+	
     "days": [0, 1, 2],
     "hours": [[1, 2, 3, 4], [2, 3, 4], [3, 4]]
 }
