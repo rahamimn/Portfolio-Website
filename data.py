@@ -1,21 +1,6 @@
 data = {
     "products": [
-        {
-            'name' : 'Cisco Meraki MR42 Cloud Managed ',
-			'type' : 'Wireless access point',
-			'description' : 'Data Link Protocol:IEEE 802.11ac Wave 2',
-			'price' :  '800.99',
-            'imageUrl' : '/shared/images/hardware/1.jpg'
-        },
-		
-		{
-            'name' : 'Ubiquiti Unifi AP-AC Pro',
-			'type' : 'Wireless access point',
-			'description' : 'Data Link Protocol:IEEE 802.11g',
-			'price' :  '657.99',
-            'imageUrl' : '/shared/images/hardware/2.jpg'
-        },
-		
+			
 		{
             'name' : 'Cradlepoint COR IBR600 ',
 			'type' : 'Wireless router',
@@ -31,6 +16,23 @@ data = {
 			'price' : '34.99',
             'imageUrl' : '/shared/images/hardware/4.jpg'
         },
+	
+        {
+            'name' : 'Cisco Meraki MR42 Cloud Managed ',
+			'type' : 'Wireless access point',
+			'description' : 'Data Link Protocol:IEEE 802.11ac Wave 2',
+			'price' :  '800.99',
+            'imageUrl' : '/shared/images/hardware/1.jpg'
+        },
+		
+		{
+            'name' : 'Ubiquiti Unifi AP-AC Pro',
+			'type' : 'Wireless access point',
+			'description' : 'Data Link Protocol:IEEE 802.11g',
+			'price' :  '657.99',
+            'imageUrl' : '/shared/images/hardware/2.jpg'
+        },
+
     ],
 	
     "images": [
