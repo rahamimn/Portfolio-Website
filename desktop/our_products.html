@@ -4,6 +4,7 @@
 <html ng-app="exampleApp">
 
 <head>
+    <title>Our Products</title>
     <meta charset="utf-8">
     <script src="/shared/js/angular.min.js"></script>
     <script src="app/app.module.js"></script>
@@ -59,6 +60,12 @@
 </body>
 
 
-
+<script>
+    function shareReview(prodName) {
+        let comment = document.querySelector('#itemName').value;
+        alert("Comment = " + comment);
+        alert(prodName);
+    }
+</script>
 
 </html>

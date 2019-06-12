@@ -5,13 +5,6 @@ You may change the source code as you see fit, so long that running it remains t
 
 In order to run the server you must have python 2.x installed (Information Systems and Computer Science labs have it installed).
 
-In order to run the server on Information Systems lab computers do the following:
-1) Open VMWARE Player.
-2) Pick Anaconda.
-3) Press "Play Virtual Machine".
-4) Inside the VM, download the server from moodle.
-5) Open CMD and traverse to the directory containing server.py
-6) Run it using the command: python server.py
 
 In order to run the server on Computer Science lab computers do the following:
 1) Download the server from moodle.
@@ -41,7 +34,7 @@ You can change the data-set as you see fit in the data.py file.
 The data is represented by a dictionary in python (https://docs.python.org/2/tutorial/datastructures.html#dictionaries). The dictionary is practically the same as a JSON (which we have went over during our JS lessons), and so you are expected to be able to change it.
 
 The data is represented by a collection name (e.g. "dogs") for the key. 
-The value of a collection is a list of dictionaries (you can think of them as JSONs), representing elements.
+The 	dictionaries (you can think of them as JSONs), representing elements.
 You can add collections and elements to a collection as you see fit.
 -------------
 
