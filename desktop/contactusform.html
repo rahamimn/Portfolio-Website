@@ -1,0 +1,89 @@
+<html>
+
+<style>
+
+
+
+</style>
+<head>
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+
+
+  <link rel="stylesheet" href="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css">
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  
+  <script src="http://netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
+
+</head>
+
+<body>
+  <div class="container">
+    <div class="panel panel-default" style="margin:0 auto;">
+      <div class="panel-body" style="margin:0 auto;">
+        <div class="container-fluid" style="margin:0 auto;">
+          <h2 style="color:orangered;">Contact Us</h2>
+          <div class="col-md-8 col-md-offset-3" style="margin:0 auto;">
+            <div class="well well-sm">
+              <form class="form-horizontal" action="" method="get">
+                <fieldset>
+                  <!-- Name input-->
+                  <div class="form-group">
+                    <label class="col-md-3 control-label" for="name">Name</label>
+                    <div class="col-md-9">
+                      <input id="name" name="name" type="text" placeholder="Your name" class="form-control" pattern="^(?!\s*$).+" required>
+                    </div>
+                  </div>
+
+                  <!-- Email input-->
+
+                  <div class="form-group">
+                    <label class="col-md-3 control-label" for="email">Your E-mail</label>
+                    <div class="col-md-9">
+                      <input type="email" id="email" name="email" type="text" placeholder="Your email"
+                        class="form-control" pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$" required>
+                    </div>
+                  </div>
+
+                  <!-- Message body -->
+                  <div class="form-group">
+                    <label class="col-md-3 control-label" for="message">Your message</label>
+                    <div class="col-md-9">
+                      <textarea class="form-control" id="message" name="message" placeholder="Please enter your message here..." rows="5" pattern="^(?!\s*$).+" required> </textarea>
+                    </div>
+                  </div>
+
+                  <!-- Form actions -->
+                  <div class="form-group">
+                    <div class="col-md-8 text-right">
+                      <button type="submit" class="btn btn-warning btn-lg" onclick="showAlert();">Submit</button>
+                    </div>
+                  </div>
+
+                  <div class="container" style="display:none;" id="myAlert">
+                      <div class="alert alert-success alert-dismissable fade in text-center" id="myAlert2">
+                          <button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+                          Thank you, your message will be reviewed soon ;)
+                      </div>
+                </fieldset>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+</body>
+
+
+<script>
+    function showAlert(){
+      if($("#myAlert").find("div#myAlert2").length==0){
+        $("#myAlert").append("<div class='alert alert-success alert-dismissable' id='myAlert2'> <button type='button' class='close' data-dismiss='alert'  aria-hidden='true'>&times;</button> Success! message sent successfully.</div>");
+      }
+      $("#myAlert").css("display", "");
+    }
+    </script>
+
+</html>

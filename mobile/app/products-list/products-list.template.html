@@ -1,0 +1,20 @@
+<ul style="list-style-type: none;  ">
+
+    <li ng-repeat="item in $ctrl.list">
+        <br>
+        <h4>Name: {{item.name}}</h4>
+        <p>Type: {{item.type}}</p>
+        <p>Description: {{item.description}}</p>
+        <p>Price: {{item.price}}</p>
+        <p>{{item.snippet}}</p>
+        <img ng-src="{{item.imageUrl}}" alt="{{item.name}}" width="300px" height="225" />
+
+        <div class="form-group">
+            <textarea class="form-control" rows="1" id="itemName" placeholder="Leave a comment..."></textarea>
+        </div>
+        <div>
+            <button type="button" class="btn btn-success" onclick=shareReview()> Submit </button>
+        </div>
+        <br>
+    </li>
+</ul>
